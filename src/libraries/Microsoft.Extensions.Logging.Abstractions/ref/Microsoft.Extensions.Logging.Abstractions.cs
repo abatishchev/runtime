@@ -148,6 +148,15 @@ namespace Microsoft.Extensions.Logging
         Critical = 5,
         None = 6,
     }
+    public readonly partial struct FormattedLogValues : System.Collections.Generic.IReadOnlyList<System.Collections.Generic.KeyValuePair<string, object?>>
+    {
+        public FormattedLogValues(string? format, params object?[]? values) { }
+        public System.Collections.Generic.KeyValuePair<string, object?> this[int index] { get { throw null; } }
+        public int Count { get { throw null; } }
+        public System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<string, object?>> GetEnumerator() { throw null; }
+        public override string ToString() { throw null; }
+        System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() { throw null; }
+    }
 }
 namespace Microsoft.Extensions.Logging.Abstractions
 {
